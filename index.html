@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Animated Background Stars -->
+    <div class="stars-container">
+      <div class="star star--1"></div>
+      <div class="star star--2"></div>
+      <div class="star star--3"></div>
+      <div class="star star--4"></div>
+      <div class="star star--5"></div>
+      <div class="star star--6"></div>
+      <div class="star star--7"></div>
+      <div class="star star--8"></div>
+      <div class="star star--9"></div>
+      <div class="star star--10"></div>
+      <div class="star star--11"></div>
+      <div class="star star--12"></div>
+      <div class="star star--13"></div>
+      <div class="star star--14"></div>
+      <div class="star star--15"></div>
+      <div class="star star--16"></div>
+      <div class="star star--17"></div>
+      <div class="star star--18"></div>
+      <div class="star star--19"></div>
+      <div class="star star--20"></div>
+      <div class="star star--21"></div>
+      <div class="star star--22"></div>
+      <div class="star star--23"></div>
+      <div class="star star--24"></div>
+      <div class="star star--25"></div>
+      <div class="star star--26"></div>
+      <div class="star star--27"></div>
+      <div class="star star--28"></div>
+      <div class="star star--29"></div>
+      <div class="star star--30"></div>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <header class="navbar">
+      <div class="brand">
+        <span class="brand__logo">■</span>
+        <span class="brand__name">Julian Villete</span>
+      </div>
+      <nav class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#certs">Certificates</a>
+        <a href="#education">Education</a>  
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#certs">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Sticky Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#tech">Tech</a>
+        <a href="#certs">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="content">
+      <!-- Hero / Home -->
+      <section id="home" class="section section--hero">
+        <div class="hero__topbar">
+          <img src="profile.png" alt="Profile photo" class="hero__avatar" id="profileImage" /> 
+          <div class="hero__text">
+            <h1 class="crt">Hi, I'm <span class="accent">Julian Villete</span></h1>
+            <p class="subtitle">Frontend & Web Developer</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+              <a class="btn btn--primary" href="resume.pdf" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__content">
+          <p>I'm a passionate frontend and web developer with a love for creating beautiful, functional, and user-friendly digital experiences. With expertise in modern web technologies, I enjoy turning complex problems into simple, elegant solutions.</p>
+          
+          <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying up-to-date with the latest trends in web development.</p>
+          
+          <div class="about__highlights">
+            <div class="highlight">
+              <h3>🎯 Mission</h3>
+              <p>To create web experiences that are not only visually appealing but also accessible, performant, and meaningful to users.</p>
+            </div>
+            <div class="highlight">
+              <h3>🚀 Approach</h3>
+              <p>I focus on clean code, modern best practices, and user-centered design to deliver exceptional results.</p>
+            </div>
+            <div class="highlight">
+              <h3>💡 Passion</h3>
+              <p>I'm passionate about solving real-world problems through technology and making the web a better place for everyone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section id="tech" class="section">
+        <h2 class="section__title">Tech Stack</h2>
+        <div class="tech">
+          <div class="tech__group">
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li data-tooltip="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" /></li>
+              <li data-tooltip="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" /></li>
+              <li data-tooltip="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></li>
+              <li data-tooltip="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /></li>
+              <li data-tooltip="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /></li>
+              <li data-tooltip="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" /></li>
+              <li data-tooltip="Tailwind CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" /></li>
+              <li data-tooltip="Vite"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" /></li>
+            </ul>
+          </div>
+          <div class="tech__group">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li data-tooltip="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /></li>
+              <li data-tooltip="Express"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" /></li>
+              <li data-tooltip="NestJS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS" /></li>
+              <li data-tooltip="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /></li>
+              <li data-tooltip="Django"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" /></li>
+            </ul>
+          </div>
+          <div class="tech__group">
+            <h3>Databases</h3>
+            <ul class="tags">
+              <li data-tooltip="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" /></li>
+              <li data-tooltip="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /></li>
+              <li data-tooltip="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /></li>
+            </ul>
+          </div>
+          <div class="tech__group">
+            <h3>Cloud & DevOps</h3>
+            <ul class="tags">   
+              <li data-tooltip="Kubernetes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" /></li>
+              <li data-tooltip="Vercel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" /></li>
+              <li data-tooltip="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" /></li>
+              <li data-tooltip="CI/CD"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="CI/CD" /></li>
+            </ul>
+          </div>
+          <div class="tech__group">
+            <h3>Other Tools & Practices</h3>
+            <ul class="tags">
+              <li data-tooltip="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /></li>
+              <li data-tooltip="Jest"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest" /></li>
+              <li data-tooltip="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certs" class="section">
+        <h2 class="section__title">Certificates</h2>
+        <div class="certificates-grid" id="certificatesGrid">
+          <!-- Certificates will be dynamically loaded here -->
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section__title">Education</h2>
+        <ul class="edu-list">
+          <li>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p>Lyceum of Alabang · 2021 – 2025</p>
+          </li>
+          <li>
+            <h3>Senior High School - Information Communication Technology</h3>
+            <p>Lyceum of Alabang · 2019 – 2021</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <section id="experience" class="section">
+        <h2 class="section__title">Experience</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Freelance Web Developer</h3>
+              <p>As a freelance developer, I have worked on various online commissions, creating and customizing websites for individual clients and small businesses. My work involved building responsive and user-friendly web interfaces, implementing functional features, and ensuring optimal performance across devices. Through these projects, I gained hands-on experience in front-end and back-end development while communicating directly with clients to deliver tailored web solutions that meet their specific needs. <br><br>2021 – 2025</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Junior Software Engineer Intern</h3>
+              <p>As a Junior Software Engineer Intern in BSFIL Technologies Inc., I developed and maintained cloud-based software applications and assisted in migrating legacy data to a new cloud-based ERP system. I collaborated with the development team on software projects, ensuring smooth system integration and reliable performance. This experience allowed me to strengthen my skills in cloud technology, data management, and collaborative software development.  <br> <br> March 2025 – June 2025</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="section__title">Projects</h2>
+        <div class="grid projects__grid" id="projectsGrid">
+          <!-- Example Project Card -->
+          <article class="card project">
+            <div class="card__body">
+              <h3 class="card__title">Debug Hero</h3>
+              <p class="card__desc">A lightweight coding game to practice finding and fixing bugs across multiple levels and topics. Built with React, Vite, TypeScript, and Prism.js.</p>
+            </div>
+            <div class="card__footer">
+              <a class="chip" href="https://debug-hero.vercel.app/">Demo</a>
+              <a class="chip" href="https://github.com/JulianVillete/Debug-Hero">Code</a>
+              <span class="chip chip--muted">React</span>
+              <span class="chip chip--muted">Vite</span>
+              <span class="chip chip--muted">TypeScript</span>
+              <span class="chip chip--muted">Prism.js</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="card__body">
+              <h3 class="card__title">CashFlowr</h3>
+              <p class="card__desc">CashFlowr is a modern, responsive web application designed to help users track income, expenses, and savings goals with ease. Built with a clean UI and interactive charts, it provides an intuitive overview of personal finances — all directly in your browser.</p>
+            </div>
+            <div class="card__footer">
+              <a class="chip" href="https://cashhflowr.netlify.app/">Demo</a>
+              <a class="chip" href="https://github.com/JulianVillete/Cashflowr">Code</a>
+              <span class="chip chip--muted">Vanilla JavaScript</span>
+              <span class="chip chip--muted">Chart.js</span>
+              <span class="chip chip--muted">ExchangeRate-API</span>
+            </div>
+          </article>
+
+
+          <article class="card project">
+            <div class="card__body">
+              <h3 class="card__title">StockPulse</h3>
+              <p class="card__desc">Real-time stock tracking app with AI predictions - React, Node.js, Alpha Vantage API</p>
+            </div>
+            <div class="card__footer">
+              <a class="chip" href="#" data-video="demo/stockpulse.mp4">Demo</a>
+              <a class="chip" href="https://github.com/JulianVillete/StockPulse">Code</a>
+              <span class="chip chip--muted">React</span>
+              <span class="chip chip--muted">Tailwind CSS</span>
+              <span class="chip chip--muted">Chart.js</span>
+              <span class="chip chip--muted">Node.js & Express</span>
+              <span class="chip chip--muted">Aplha Vantage API</span>
+              <span class="chip chip--muted">Axios</span>
+              <span class="chip chip--muted">MongoDB Atlas</span>
+            </div>
+          </article>
+        </div>
+
+
+        <article class="card project">
+          <div class="card__body">
+            <h3 class="card__title">TeraAI</h3>
+            <p class="card__desc">TeraAI is a personal project — a minimalist, friendly AI assistant designed to help with simple everyday tasks and conversations. Currently, it uses a free API key, I plan to upgrade the API and improve performance in future updates as development continues.</p>
+          </div>
+          <div class="card__footer">
+            <a class="chip" href="#" data-video="demo/TeraAI.mp4">Demo</a>
+            <a class="chip" href="https://github.com/JulianVillete/TeraAI">Code</a>
+            <span class="chip chip--muted">Bootstrap</span>
+            <span class="chip chip--muted">Vanilla JavaScript</span>
+            <span class="chip chip--muted">Marked.js</span>
+            <span class="chip chip--muted">Node.js & Express</span>
+            <span class="chip chip--muted">CORS</span>
+            <span class="chip chip--muted">dotenv</span>
+            <span class="chip chip--muted">node-fetch</span>
+          </div>
+        </article>
+      </div>
+
+      
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section__title">Contact Me</h2>
+        <div class="contact__content">
+          <p>Get in touch with me! Fill out the form below or use the floating button at bottom-right to reach out quickly.</p>
+          <div class="contact__form-container">
+            <form class="contact__form" id="contactSectionForm" action="https://formspree.io/f/xnngbveb" method="POST">
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+              <label class="field">
+                <span>Subject</span>
+                <input type="text" name="subject" placeholder="Portfolio Contact" />
+              </label>
+              <label class="field">
+                <span>Message</span>
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <div class="contact__actions">
+                <button type="submit" class="btn btn--primary" id="sendContactMessage">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Floating Contact Button -->
+    <button id="contactFab" class="fab" aria-label="Contact me">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+    </button>
+
+    <!-- Profile Image Modal -->
+    <dialog id="profileModal" class="modal">
+      <div class="modal__content profile-modal">
+        <header class="modal__header">
+          <h3>Profile Photo</h3>
+          <button type="button" class="icon-btn" id="closeProfileModal" aria-label="Close">✖</button>
+        </header>
+        <div class="profile-modal__image">
+          <img src="profile.png" alt="Profile photo - enlarged view" />
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Contact Modal -->
+    <dialog id="contactDialog" class="modal">
+      <div class="modal__content" id="contactModalContent">
+        <header class="modal__header">
+          <h3>Contact Me</h3>
+          <button type="button" class="icon-btn" id="closeDialog" aria-label="Close">✖</button>
+        </header>
+        <form method="dialog" id="contactForm" action="https://formspree.io/f/xnngbveb" method="POST">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label class="field">
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="Portfolio Contact" />
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <menu class="modal__actions">
+            <button value="cancel" class="btn">Cancel</button>
+            <button type="submit" class="btn btn--primary" id="sendMessage">Send</button>
+          </menu>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Video Demo Modal -->
+    <dialog id="videoModal" class="modal">
+      <div class="modal__content" id="videoModalContent">
+        <header class="modal__header">
+          <h3>Project Demo</h3>
+          <button type="button" class="icon-btn" id="closeVideoModal" aria-label="Close">✖</button>
+        </header>
+        <div style="padding-top: 8px;">
+          <video id="demoVideo" controls style="width: 100%; max-height: 70vh; border-radius: 8px; background: #000;" preload="metadata"></video>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
