@@ -344,3 +344,46 @@ function initVideoDemo() {
 
 document.addEventListener('DOMContentLoaded', initVideoDemo);
 
+// Loading Screen functionality
+function initLoadingScreen() {
+  const loadingScreen = document.getElementById('loadingScreen');
+  if (!loadingScreen) return;
+
+  // Hide loading screen after page is fully loaded
+  function hideLoadingScreen() {
+    // Add a minimum display time for better UX (2.5 seconds)
+    const minDisplayTime = 2500;
+    const startTime = Date.now();
+    
+    function checkAndHide() {
+      const elapsedTime = Date.now() - startTime;
+      const remainingTime = Math.max(0, minDisplayTime - elapsedTime);
+      
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        
+        // Remove from DOM after transition completes
+        setTimeout(() => {
+          if (loadingScreen.parentNode) {
+            loadingScreen.parentNode.removeChild(loadingScreen);
+          }
+        }, 800); // Match CSS transition duration
+      }, remainingTime);
+    }
+    
+    // Check if page is already loaded
+    if (document.readyState === 'complete') {
+      checkAndHide();
+    } else {
+      // Wait for page to fully load
+      window.addEventListener('load', checkAndHide);
+    }
+  }
+
+  // Start the loading screen hide process
+  hideLoadingScreen();
+}
+
+// Initialize loading screen when DOM is loaded
+document.addEventListener('DOMContentLoaded', initLoadingScreen);
+
